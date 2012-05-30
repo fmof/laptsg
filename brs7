@@ -1,0 +1,3 @@
+#!/bin/bash
+
+time ant && java -cp classes edu.jhu.coe.PCFGLA.GrammarTrainer -train toydata/simple7wsj -validation toydata/simple2wsj -out scratch/simple7 -v -SMcycles 2 -constraints toydata/simple7wsj-binarizedR4K20-constraintset -useConstraintSet -reobtainConstraints -cutoff 20 #| less
